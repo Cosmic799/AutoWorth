@@ -2,7 +2,7 @@
 
 AutoWorth is a full-stack web application designed to predict the market value of used cars based on their specifications. It leverages a Machine Learning model trained on historical car data to provide accurate price estimates.
 
-## 🌟 Project Overview
+## Project Overview
 
 Buying or selling a used car can be challenging due to the uncertainty of fair pricing. AutoWorth solves this by analyzing various parameters such as:
 - **Vehicle Specifications**: Engine capacity, power, torque, dimensions.
@@ -126,7 +126,7 @@ Let's trace a specific request to see exactly what happens under the hood.
 **Feature: Random Sample**
 - The `/random-sample` endpoint runs `model/sample.py` to pick a random row from the dataset. This helps users quickly test the application without manually filling all fields.
 
-## 🚧 Challenges Faced (Interview Focus)
+## Challenges Faced (Interview Focus)
 
 These are the key engineering challenges encountered during development and the rationale behind the solutions.
 
@@ -148,7 +148,7 @@ These are the key engineering challenges encountered during development and the 
     *   **Action**: Selected **Random Forest Regressor** over simple Linear Regression (too simple) or Deep Learning (too heavy). I used `RandomizedSearchCV` to fine-tune hyperparameters (depth, estimators) to prevent overfitting.
     *   **Result**: Achieved a strong R² score while keeping inference time under 2 seconds.
 
-## 🚀 Future Improvements & Scalability
+## Future Improvements & Scalability
 
 If this project were to be moved to a production environment with high traffic, here is the roadmap for scaling.
 
